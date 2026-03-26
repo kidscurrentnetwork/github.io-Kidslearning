@@ -3,17 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sunny Side Street - Kids Learning</title>
+    <title>Sunny Side Street</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <style>
+        body {
+            background: linear-gradient(to right, #ff7e5f, #feb47b);
+        }
+    </style>
 </head>
-<body>
-    <h1>Welcome to Sunny Side Street</h1>
-    <p>Explore our educational resources and enjoy learning!</p>
-    <div>
-        <h2>Resources</h2>
-        <ul>
-            <li><a href="/downloads/resource1.zip">Download Resource 1</a></li>
-            <li><a href="/videos/video1.mp4">Watch Video 1</a></li>
-        </ul>
+<body class="flex items-center justify-center h-screen">
+    <div class="text-center">
+        <div class="bg-white rounded-lg shadow-lg p-5">
+            <h1 class="text-4xl font-bold mb-4">Sunny Side Street</h1>
+            <div class="flex justify-center mb-4">
+                <span class="mr-2">🌞</span>
+                <h2 class="text-2xl">Meet Sol!</h2>
+            </div>
+            <div class="flex justify-center space-x-4">
+                <a href="/path/to/download" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Download</a>
+                <a href="https://www.youtube.com/watch?v=your_video_link" target="_blank" class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-600">Watch Video</a>
+            </div>
+        </div>
     </div>
 </body>
 </html>
